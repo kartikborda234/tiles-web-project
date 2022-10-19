@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&family=Permanent+Marker&family=Poppins:wght@300;400;500;600&family=Titillium+Web:wght@200;300;600&family=Ubuntu:wght@300&display=swap');
+
+:root {
+    --body-font: font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    overflow-x: hidden;
+    max-width: 100%;
+}
+body {
+    background-color: ghostwhite;
+}
+.navbar {
+    background-color: black !important;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    opacity: .9;
+}
+.navbar-brand {
+    color: red !important;
+    font-family: cursive;
+    font-size: 2rem;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+    margin-right: 30px;
+    padding: 10px;
+}
+
+.navbar-collapse ul li a {
+    padding: 10px;
+}
+
+.navbar-collapse ul li a:hover {
+    color: red !important;
+}
+
+
+.navbar .navbar-brand img {
+    width: 15% !important;
+    margin-left: 60px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: black;
+    color: red;
+}
+
+.carousel-inner {
+
+    position: relative;
+}
+
+.carousel-item img {
+    height: 100% !important;
+}
+
+/* tile section */
+#tile-section {
+    position: relative;
+}
+
+.breadcumb-area {
+    background: url(tile.jpg) center/cover no-repeat;
+    width: 100%;
+    height: 90vh !important;
+
+}
+
+.tile:before {
+    width: calc(50% - 112px);
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+}
+
+.bg-overlay:after {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.breadcumb-content h2 {
+    color: #fff !important;
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 70px;
+}
+
+.breadcumb-content {
+    padding-top: 100px;
+}
+
+.breadcumb-area {
+    position: relative;
+    z-index: 1;
+    height: 555px;
+}
+.nav-pills .nav-link.active{
+    background-color: rgb(10, 24, 36);
+}
+.nav-pills .nav-link {
+    color: black !important;
+   
+}
+
+
+.nav-item .nav-link.active{
+    color: red !important;
+}
+
+.nav-pills li a:hover {
+    color: red !important;
+}
+
+.card:after {
+    position: absolute;
+    width: calc(100% - 80px);
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.411);
+    content: '';
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 2px;
+    box-shadow: 0 10px 15px rgba(141, 118, 118, 0.15);
+}
+
+.card {
+    box-shadow: 10px 10px 10px 0px;
+    position: relative;
+}
+
+.card:hover {
+    color: red;
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: 0.5rem 5rem;
+}
+
+/* data magnify */
+
+
+.card {
+    max-width: 300px;
+    margin: 25px;
+    position: relative;
+}
+
+.card img {
+    max-width: 100%;
+    transition: all 1.5s ease;
+    margin: 3rem;
+}
+.card a img:hover{
+    transform: scale(1.5);
+}
+/* footer */
+.sec-footer{
+    background-color:  rgb(54, 50, 50) !important;
+    color: white !important;
+}
+.fa{
+    background-color:  rgb(54, 50, 50) !important;
+    /* color: white !important; */
+}
+a{
+    text-decoration: none;
+}
+.icon a:hover{
+    color: red !important;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+#footer{
+    font-family: initial!important;
+}
+
+

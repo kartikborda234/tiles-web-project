@@ -1,0 +1,120 @@
+<div class="card-body">
+    <div class="row x d-flex justify-content-between">
+        <div class="d-flex col-12 ">
+            <div style="align-self: flex-end;">
+                <label for="length">Length</label>
+            </div>
+            <div class="ml-3" style="flex-grow: 0.5">
+                <input type="number" class="form-control shadow sd_inner border-0" id="SLength" name="SLength"
+                    style="background-color: whitesmoke">
+            </div>
+            <div class="ml-2 align-self-center">
+                <small>Feet</small>
+            </div>
+        </div>
+    </div>
+    <div class="row x d-flex justify-content-between">
+        <div class="d-flex col-12">
+            <div style="align-self: flex-end; justify-content: flex-start;">
+                <label for="length">Width</label>
+            </div>
+            <div class="ml-4" style="flex-grow: 0.5">
+                <input type="number" class="form-control shadow sd_inner border-0" id="SWidth" name="SWidth"
+                    style="background-color: whitesmoke;">
+            </div>
+            <div class="ml-2 align-self-center">
+                <small>Feet</small>
+            </div>
+        </div>
+    </div>
+    <div class="row x d-flex justify-content-between">
+        <div class="d-flex col-12">
+            <div style="align-self: flex-end;">
+                <label for="length">Tiles Size</label>
+            </div>
+            <div class="ml-3" style="flex-grow: 0.5">
+                <select style="background-color: whitesmoke;" class="form-control shadow sd_inner border-0" name="sizes"
+                    id="sizes">
+                    <option>--Select Size--</option>
+                    <option value="600 x 600" data-picperbox="4">600 x 600 MM</option>
+                    <option value="800 x 1600" data-picperbox="3"> 800 x 1600 MM</option>
+                    <option value="2400 x 1200" data-picperbox="2">2400 x 1200 MM</option>
+                    <option value="600 x 1200" data-picperbox="3">600 x 1200 MM</option>
+                    <option value="1200 x 1200" data-picperbox="2">1200 x 1200 MM</option>
+                    <option value="900 x 1800" data-picperbox="3">900 x 1800 MM</option>
+                    <option value="300 x 450" data-picperbox="0">300 x 450 MM</option>
+                    <option value="300 x 600" data-picperbox="0">300 x 600 MM</option>
+                    <option value="200 x 1200" data-picperbox="3">200 x 1200 MM</option>
+                </select>
+            </div>
+            <div class="ml-2 align-self-center">
+                <small>&nbsp;</small>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row x d-flex justify-content-start">
+        <div class="d-flex col-4">
+            <div style="align-self: flex-end;">
+                <button class="btn btn-outline-success" name="Button1" id="Button1" onclick="Calc()"
+                    type="button">Calculate</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+///////////////////////////////////////////////////////////////////////////////////////
+<div class="card-body">
+    <div class="row x d-flex justify-content-between">
+        <div class="d-flex col-12 ">
+            <div style="align-self: flex-end;flex-grow: 0.3">
+                <label for="length">Total Area Covered (in Sq.M)</label>
+            </div>
+            <div class="ml-3" style="flex-grow: 0.5">
+                <input type="number" class="form-control shadow sd_inner border-0" name="ar_mtr" id="ar_mtr" readonly="" size="6" style="background-color: whitesmoke">
+            </div>
+            <!--  <div class="ml-2 align-self-center">
+                <small></small>
+            </div> -->
+        </div>
+    </div>
+    <div class="row x d-flex justify-content-between">
+        <div class="d-flex col-12 ">
+            <div style="align-self: flex-end; flex-grow: 0.3">
+                <label for="length">Total Area Covered (in Sq.Ft)</label>
+            </div>
+            <div class="ml-3" style="flex-grow: 0.5">
+                <input type="number" maxlength="2" id="ar_feet" readonly="" class="form-control shadow sd_inner border-0" name="ar_feet" style="background-color: whitesmoke">
+            </div>
+            <!--  <div class="ml-2 align-self-center">
+                <small>(in Sq.Ft)</small>
+            </div> -->
+        </div>
+    </div>
+    <div class="row x d-flex justify-content-between">
+        <div class="d-flex col-12">
+            <div style="align-self: flex-end; justify-content: flex-start;flex-grow: 0.3">
+                <label for="length">Required Tiles&nbsp;</label>
+            </div>
+            <div class="ml-4" style="flex-grow: 0.3">
+                <input type="number" class="form-control shadow sd_inner border-0" maxlength="10" name="TotalTiles" id="TotalTiles" readonly="" size="10" style="background-color: whitesmoke;">
+            </div>
+            <!--  <div class="ml-2 align-self-center">
+                <small>Feet</small>
+            </div> -->
+        </div>
+    </div>
+    <div class="row x d-flex justify-content-between">
+        <div class="d-flex col-12">
+            <div style="align-self: flex-end; justify-content: flex-start;flex-grow: 0.3">
+                <label for="length">Required Boxes</label>
+            </div>
+            <div class="ml-3" style="flex-grow: 0.3">
+                <input type="number" class="form-control shadow sd_inner border-0" maxlength="10" name="TotalBoxes" id="TotalBoxes" readonly="" size="10" style="background-color: whitesmoke;">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p style="margin-bottom: 0px !important">*This may vary on basis of your actual need.</p>
+    <p style="margin-bottom: 0px !important">*This is only approx calculation.</p>
+</div>
